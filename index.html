@@ -3,13 +3,29 @@
   <title>Connect 4</title>
   <link href="connect4.css" rel="stylesheet">
 </head>
-<body>
+<body style="background: linear-gradient(to right, rgb(255, 110, 110) , rgb(255, 151, 65))">
 
-<div id="game">
-  <table id="board"></table>
-</div>
+  <h1>CONNECT 4!</h1>
+  
+  <hr>
+  
+  <form action="">
+    <label for="">Player 1 color: </label>
+      <input type="text" id="player1Color" placeholder="Type in a color" value="aqua">
+    <label for="">Player 2 color: </label>
+      <input type="text" id="player2Color" placeholder="Type in a color" value="chartreuse">
+  </form>
+  
+  <p></p>
+  <input type="submit" id="playerColors" value="Submit colors!"> 
+  <p></p>
 
-<script src="connect4.js"></script>
+  <div id="game">
+    <input type="submit" name="newGame" id="newGame" value="Click here to start new game!">
+    <table id="board"></table>
+  </div>
+
+  <script src="connect4.js"></script>
 
 </body>
 </html>
